@@ -1,0 +1,17 @@
+
+npm install -g @oracle/ojet-cli
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+ojet --version
+
+ojet create HelloWorld --template=navdrawer
+ojet create HelloWorld --template=navdrawer --typescript
+npx @oracle/ojet-cli --version
+npm install typescript webpack sass
+
+
+npx @oracle/ojet-cli create vdom-application --vdom --template=basic
+npx @oracle/ojet-cli build
+npx @oracle/ojet-cli serve
+
+<oj-button on-oj-action="doSomething">Click Me</oj-button>
+<oj-table id="table" data="[[dataProvider]]" columns='[{"headerText": "Name", "field": "name"}]'></oj-table>
